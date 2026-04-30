@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="La Madriguera is a cozy neighborhood coffee shop serving espresso, seasonal drinks, pastries, and slow mornings."
+    >
+    <title>La Madriguera Coffee Shop</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="La Madriguera home">
+        <span class="brand-mark">LM</span>
+        <span>La Madriguera</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#menu">Menu</a>
+        <a href="#story">Story</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Neighborhood coffee, fresh every morning</p>
+          <h1 id="hero-title">La Madriguera</h1>
+          <p class="hero-copy">
+            A warm coffee stop for slow mornings, focused work sessions, and
+            house-made pastries worth planning your day around.
+          </p>
+          <div class="hero-actions" aria-label="Main actions">
+            <a class="button primary" href="#menu">Explore menu</a>
+            <a class="button secondary" href="#visit">Plan a visit</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Shop highlights">
+        <div class="intro-item">
+          <span>Espresso Bar</span>
+          <strong>Dialed-in classics and seasonal signatures.</strong>
+        </div>
+        <div class="intro-item">
+          <span>Bakery Case</span>
+          <strong>Small-batch pastries baked throughout the day.</strong>
+        </div>
+        <div class="intro-item">
+          <span>Stay Awhile</span>
+          <strong>Comfortable seating, outlets, and calm playlists.</strong>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <p class="eyebrow">Customer favorites</p>
+          <h2 id="menu-title">A first menu worth sharing</h2>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85"
+              alt="Latte served in a ceramic cup"
+            >
+            <div>
+              <h3>Honey Cinnamon Latte</h3>
+              <p>Espresso, steamed milk, local honey, and a soft cinnamon finish.</p>
+              <span>$5.25</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=900&q=85"
+              alt="Cold brew coffee in a glass"
+            >
+            <div>
+              <h3>Desert Cold Brew</h3>
+              <p>Slow-steeped coffee served over ice with orange peel and vanilla.</p>
+              <span>$4.75</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85"
+              alt="Fresh pastry on a bakery counter"
+            >
+            <div>
+              <h3>Guava Cream Pastry</h3>
+              <p>Flaky dough, bright guava, and lightly sweet cream cheese.</p>
+              <span>$4.50</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-section" id="story" aria-labelledby="story-title">
+        <div class="story-image" role="img" aria-label="Cafe counter with coffee equipment"></div>
+        <div class="story-copy">
+          <p class="eyebrow">Built for regulars</p>
+          <h2 id="story-title">A quieter kind of coffee shop</h2>
+          <p>
+            La Madriguera is designed around small rituals: a steady espresso
+            before work, a pastry after class, a table where a conversation can
+            unfold without feeling rushed.
+          </p>
+          <p>
+            The brand can grow from here with real photos, a fuller menu, online
+            ordering, and events. This starter page gives the shop a clean first
+            impression while leaving room for personality.
+          </p>
+        </div>
+      </section>
+
+      <section class="section visit-section" id="visit" aria-labelledby="visit-title">
+        <div class="section-heading">
+          <p class="eyebrow">Come by</p>
+          <h2 id="visit-title">Open early, open often</h2>
+        </div>
+
+        <div class="visit-layout">
+          <div class="visit-details">
+            <div>
+              <span>Address</span>
+              <p>123 Calle Aurora, Phoenix, AZ</p>
+            </div>
+            <div>
+              <span>Hours</span>
+              <p>Mon-Fri 7:00 AM - 5:00 PM<br>Sat-Sun 8:00 AM - 4:00 PM</p>
+            </div>
+            <div>
+              <span>Contact</span>
+              <p><a href="tel:+16025550149">(602) 555-0149</a><br><a href="mailto:hola@lamadriguera.cafe">hola@lamadriguera.cafe</a></p>
+            </div>
+          </div>
+
+          <form class="signup-form" aria-label="Newsletter signup">
+            <label for="email">Get menu drops and event notes</label>
+            <div class="form-row">
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+              <button type="submit">Join list</button>
+            </div>
+            <p class="form-message" data-form-message aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>La Madriguera Coffee Shop</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
